@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login logout page</title>
+    <link rel="stylesheet" href="mystyle.css" />
+  </head>
+  <body>
+    <div class="contain">
+      <span class="phn-kart">Phone Kart</span>
+      <div class="img-phones">
+        <img class="img-phone" src="./imagesss/image1.jpeg" alt="" />
+      </div>
+      <!-- Button to open the modal -->
+      <button
+        onclick="document.getElementById('id01').style.display='block'"
+        class="auth-design"
+      >
+        Sign Up
+      </button>
+
+      <!-- The Modal (contains the Sign Up form) -->
+      <div id="id01" class="modal">
+        <span
+          onclick="document.getElementById('id01').style.display='none'"
+          class="close"
+          title="Close Modal"
+          >created by Rahul Raj</span
+        >
+        <form class="modal-content">
+          <div class="container">
+            <h1>Sign Up</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr />
+            <label for="email"><b>Email</b></label>
+            <input
+              type="text"
+              placeholder="Enter Email"
+              name="email"
+              required
+            />
+            <label for="psw"><b>Password</b></label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              name="psw"
+              required
+            />
+            <label for="psw-repeat"><b>Confirm Password</b></label>
+            <input
+              type="password"
+              placeholder="Confirm Password"
+              name="psw-repeat"
+              required
+            />
+            <label>
+              <input
+                type="checkbox"
+                checked="checked"
+                name="remember"
+                style="margin-bottom: 15px"
+              />
+              Remember me
+            </label>
+            <p>
+              By creating an account you agree to our
+              <a href="#" style="color: dodgerblue">Terms & Privacy</a>.
+            </p>
+            <div class="clearfix">
+              <button
+                type="button"
+                onclick="document.getElementById('id01').style.display='none'"
+                class="cancelbtn"
+              >
+                Cancel
+              </button>
+              <button class="signup" onClick="Signup(e)">Sign Up</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Button to open the modal login form -->
+      <button
+        onclick="document.getElementById('id02').style.display='block'"
+        class="auth-design"
+      >
+        Login
+      </button>
+
+      <!-- The Modal -->
+      <div id="id02" class="modals">
+        <span
+          onclick="document.getElementById('id02').style.display='none'"
+          class="closes"
+          title="Close Modal"
+          >&times;</span
+        >
+
+        <!-- Modal Content -->
+        <form class="modals-content animate">
+          <div class="imgcontainers">
+            <img src="./imagesss/image2.jpg" alt="Avatar" class="avatar" />
+          </div>
+
+          <div class="containers">
+            <label for="uname"><b>Username</b></label>
+            <input
+              type="text"
+              placeholder="Enter Username"
+              name="uname"
+              required
+            />
+
+            <label for="psw"><b>Password</b></label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              name="psw"
+              required
+            />
+
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember" />
+              Remember me
+            </label>
+
+            <div class="containerss" style="background-color: #f1f1f1">
+              <button
+                type="button"
+                onclick="document.getElementById('id02').style.display='none'"
+                class="cancelbtn"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="goto">
+        <a class="btn" href="index.html"> go to main page</a>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
