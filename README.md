@@ -17,4 +17,4 @@ Next you can see client review as many peoples share their review.
 Then you can see contact us on the top of the page where you can send your feedback or you can send your question as well.
 
 **Home Page**
-<img src= "https://github.com/rahulstm08/PhoneKart/blob/main/Readme_images/Home_page.jpeg"/>
+<img src="https://github.com/rahulstm08/PhoneKart/blob/main/Readme_images/Home_page.jpeg"/>
